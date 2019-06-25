@@ -1,0 +1,212 @@
+body {
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /*font-family: 'PT Sans', sans-serif;*/
+    /* font-family: 'Bai Jamjuree', sans-serif; */
+    /* font-family: 'Baloo', cursive; */
+    /* font-family: 'Patua One', cursive; */
+    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Fjalla One', sans-serif; */
+
+    margin: 0;
+}
+
+.header {
+    height: 70px;
+    background-color: #454648;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .school {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 22px;
+}
+
+.header .school i {
+    padding: 10px;
+}
+
+.header .menu {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: inherit;
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+
+.header ol {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    display: flex;
+    width: 100%;
+}
+
+.header ol li {
+    list-style: none;
+    height: inherit;
+}
+
+.header a {
+    height: inherit;
+    text-decoration: none;
+    padding: 0 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header a:hover {
+    background-color: #778beb;
+    border-radius: 4px;
+}
+
+.header ol .sub-menu {
+    background: #454648;
+    border-radius: 6px;
+    color: white;
+    display: none;
+    width: 154px;
+    height: auto;
+    margin-top: 0.5px;
+    position: absolute;
+}
+
+.menu ol li:hover .sub-menu {
+    display: block;
+}
+
+.header .sub-menu a {
+    margin: 0;
+    padding: 8px 0;
+    justify-content: center;
+}
+
+.sub-icon {
+    padding-left: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    flex: 1;
+    height: inherit;
+    margin: auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+.burger-button {
+    width: 50px;
+    border-radius: 50%;
+    background: #f39c12;
+    display: none;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+.header .link-buttom:hover{
+    background-color: #b33939;
+}
+
+/* Desktop First que empieze desde el MQ mas grande */
+
+@media screen and (max-width: 1024px){
+
+    
+}
+
+@media screen and (max-width: 767px){
+
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .header .school {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header ol {
+        display: block;
+    }
+
+    .header ol .link {
+        margin: 20px;
+    }
+
+    .header a {
+        justify-content: center;
+        padding: 15px 0;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .header .menu {
+        position: fixed;
+        z-index: 1;
+        background: rgba(34, 47, 62, .9);
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bai Jamjuree', sans-serif;
+        /* font-weight: bold; */
+        font-size: 18px;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    .menu.is-active {
+        left: 0;
+        transition: .3s;
+    }
+
+    .header ol .sub-menu {
+        width: auto;
+        position: relative;
+        background: #ecf0f1;
+        padding: 12px;
+    }
+
+    .header .sub-menu a {
+        color: #2b6b17;
+    }
+    .header .sub-menu a:hover {
+        background: #efd3a0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 351px){
+    .header{
+        width: 352px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .header{
+        width: 352px;
+    }
+
+    .project_menu {
+        width: 352px;
+    }
+}

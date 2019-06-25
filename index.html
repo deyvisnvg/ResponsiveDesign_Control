@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menú Super Administrador</title>
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:600|Baloo|Bitter:700|Fjalla+One|PT+Sans:700|Patua+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/control.css">
+</head>
+
+<body>
+    <i class="icon-menu burger-button" id="icon-burger"></i>
+    <header class="header">
+        <div class="container">
+            <div class="school"><i class="icon-books"></i>I.E Comercio N°64</div>
+            <nav class="menu">
+                <ol>
+                    <li class="link">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="link">
+                        <a href="#">Registros <i class="icon-down sub-icon"></i></a>
+                        <ol class="sub-menu">
+                            <li><a href="#">Reg. Usuarios</a></li>
+                            <li><a href="#">Reg. Alumnos</a></li>
+                        </ol>
+                    </li>
+                    <li class="link">
+                        <a href="#">Control <i class="icon-down sub-icon"></i></a>
+                        <ol class="sub-menu">
+                            <li><a href="#">Control de Entrada</a></li>
+                            <li><a href="#">Control de Salida</a></li>
+                        </ol>
+                    </li>
+                    <li class="link">
+                        <a href="#">Reportes</a>
+                    </li>
+                    <li class="link">
+                        <a class="link-buttom" href="#">Cerrar Sesión</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <section class="controller">
+            <div class="controller-container">
+                <article class="project">
+                    <div class="project-details">
+                        <p class="project-title">Institución Educativa N° 64 Comercio</p>
+                        <h1>
+                            Control de <strong>Entrada</strong>
+                        </h1>
+                        <form accept-charset="utf-8" method="POST" action ="operaciones.php?valor1=1">
+                            <input type="number" min="0" value="" name="busqueda" id="busqueda" placeholder="Código de alumno" autocomplete="off" autofocus="autofocus" required>
+                        </form>
+                        <p class="escanear-codigo">Escanear Código</p>
+                        <p class="project-pie">SchoolCode</p>
+                    </div>
+                </article>
+                <article class="project project-img">
+                    <figure class="project-imageContainer">
+                        <img src="assets/img/fondo.jpeg" alt="imagen de fondo" width="342" >               
+                    </figure>
+    
+                    <div class="project-alumno">
+                        <div class="project-image-titulo">
+                            <h3>
+                                <strong>INSTITUCIÓN EDUCATIVA N° 64 COMERCIO</strong>
+                            </h3>
+                            <img src="assets/img/insignia.png" width="90" alt="insignia"/>
+                            <h1>ESTUDIANTE</h1>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+
+        var burger = document.querySelector('#icon-burger');
+        burger.addEventListener('click', hideShow);
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+
+        // var vn = document.getElementById('icon-button');
+        // vn.addEventListener('click', mostrar);
+        // var activo = true;
+
+        // function mostrar () {
+        //     if (activo == true) {
+        //         document.querySelector('.menu').classList.add('is-active');
+        //         activo = false;
+        //     }else if (activo == false) {
+        //         document.querySelector('.menu').classList.remove('is-active');
+        //         activo = true;
+        //     }
+        // }
+
+
+    </script>
+
+</body>
+</html>
