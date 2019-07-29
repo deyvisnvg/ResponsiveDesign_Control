@@ -50,16 +50,20 @@ body {
 }
 
 .header a {
-    height: inherit;
+    /* height: inherit; */
     text-decoration: none;
-    padding: 0 12px;
+    /* padding: 0 12px; */
     color: white;
     display: flex;
     align-items: center;
+    border: 1px solid transparent;
+    margin: 13px 2px;
+    padding: 10px;
+    height: initial;
 }
 
 .header a:hover {
-    background-color: #778beb;
+    background-color: #20bf6b;
     border-radius: 4px;
 }
 
