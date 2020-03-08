@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    height: 70px;
+    height: 50px;
     background-color: #454648;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     height: inherit;
     /* font-weight: bold; */
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .header ol {
@@ -47,6 +47,7 @@ body {
 .header ol li {
     list-style: none;
     height: inherit;
+   z-index: 1;
 }
 
 .header a {
@@ -57,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     border: 1px solid transparent;
-    margin: 13px 2px;
+    margin: 4.5px 2px;
     padding: 10px;
     height: initial;
 }
@@ -84,8 +85,8 @@ body {
 
 .header .sub-menu a {
     margin: 0;
-    padding: 8px 0;
-    justify-content: center;
+    padding: 8px 20px;
+    justify-content: initial;
 }
 
 .sub-icon {
@@ -110,7 +111,7 @@ body {
     line-height: 50px;
     text-align: center;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 10px;
     left: 10px;
 }
